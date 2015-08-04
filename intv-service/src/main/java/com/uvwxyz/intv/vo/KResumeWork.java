@@ -11,42 +11,19 @@ import org.mongodb.morphia.annotations.Id;
  */
 public class KResumeWork {
 
-	/** 工作经验Id */
 	@Id
-	private ObjectId id;
-
-	/** 职位Id */
-	private ObjectId jobId;
-
-	/** 职能Id */
-	private int fnId;
-
-	/** 公司行业Id */
-	private int industryId;
-
-	/** 公司性质Id */
-	private int natureId;
-
-	/** 公司规模Id */
-	private int scaleId;
-
-	/** 公司名称 */
-	private String companyName;
-
-	/** 所属部门 */
-	private String department;
-
-	/** 工作内容、工作描述 */
-	private String desc;
-
-	/** 开始时间 */
-	private String begin;
-
-	/** 结束时间 */
-	private String end;
-
-	/** 对这家公司隐藏我的信息 */
-	private int hideMe;
+	private ObjectId id;// 工作经验Id
+	private ObjectId jobId;// 职位Id
+	private int fnId;// 职能Id：见常量表
+	private int industryId;// 公司行业Id：见常量表
+	private int natureId;// 公司性质Id：见常量表
+	private int scaleId;// 公司规模Id：见常量表
+	private String companyName;// 公司名称
+	private String department;// 所属部门
+	private String desc;// 工作内容、工作描述
+	private long begin;// 开始时间
+	private long end;// 结束时间
+	private int hideMe;// 对这家公司隐藏我的信息：0=否；1=是
 
 	public ObjectId getId() {
 		return id;
@@ -120,19 +97,19 @@ public class KResumeWork {
 		this.desc = desc;
 	}
 
-	public String getBegin() {
+	public long getBegin() {
 		return begin;
 	}
 
-	public void setBegin(String begin) {
+	public void setBegin(long begin) {
 		this.begin = begin;
 	}
 
-	public String getEnd() {
+	public long getEnd() {
 		return end;
 	}
 
-	public void setEnd(String end) {
+	public void setEnd(long end) {
 		this.end = end;
 	}
 

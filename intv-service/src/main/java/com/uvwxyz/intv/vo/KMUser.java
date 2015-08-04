@@ -1,11 +1,11 @@
 package com.uvwxyz.intv.vo;
 
 /**
- * 企业用户
+ * 猎人用户
  * 
  * @author Administrator
  *
  */
-public class KBUser {
+public class KMUser {
 
 }
